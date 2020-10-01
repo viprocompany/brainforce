@@ -20,22 +20,23 @@
 		<div class="row "  id="content">				
 			<div class="col-12  border-info border  rounded" id="center" >	
 				<!--кнопки-->
-				<div class="row border-success d-block" id="downald">		<form class="filter" method="post">	
+				<div class="row border-success d-block" id="downald">		<form class="filter" method="post" pjax-container>	
 						<span>Показать товары, у которых </span>
 						<select name="price_select" class="price_select" >
 							<option  value="price_retail">Розничная цена</option>
 							<option  value="price">Оптовая цена</option>
 						</select>
 						<span>от</span>
-						<input type="text" name="price_min" class="price_min" value="1000" required>
+						<input type="text" name="price_min" class="price_min" value="1000" required pattern="[0-9]*[.,]?[0-9]">
 						<span>до</span>
-						<input type="text" name="price_max" class="price_max" value="3000" required>
+
+						<input type="text" name="price_max" class="price_max" value="3000" required pattern="[0-9]*[.,]?[0-9]">
 						<span>рублей и на складе</span>
 						<select name="sum_select" class="sum_select" >
 							<option  value="count_min">Менее</option>
 							<option  value="count_max">Более</option>
 						</select>
-						<input type="text" name="limit" class="limit" value="20" required>
+						<input type="text" name="limit" class="limit" value="20" required pattern="[0-9]*[.,]?[0-9]">
 						<span>штук</span>
 						<input type="submit" value="показать товары" class="btn btn-outline-dark">
 					</form>
@@ -53,6 +54,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="<?php echo ROOT?>assest/js/jquery-3.3.1.js"></script>
+<script src="<?php echo ROOT?>assest/js/jquery.pjax.js"></script>
 		<script src="<?php echo ROOT?>assest/js/script.js"></script>
 	</body>
 	</html>

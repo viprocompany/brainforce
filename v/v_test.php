@@ -2,7 +2,7 @@
 <!-- TABLE -->
 <div class="table">
 		<div class="msg"><?php echo $msg; ?></div>
-<table class="table_2">
+<table class="table_2" id="pjax-container">
 	<!--ряд с ячейками заголовков-->
 <tr>
 	<th>Наименование товара</th>

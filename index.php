@@ -2,7 +2,7 @@
 //объявляем константу для переменной корня сайта для подстановки на ссылках сайта после перехода на человекочитаемые урлы
 define('ROOT','/');
 // define('ROOT','http://brainforce/');
-
+// var_dump([$_SERVER]);
 include_once('m/validate.php');
 include_once('m/db.php');
 include_once('m/system.php');

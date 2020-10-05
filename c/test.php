@@ -51,7 +51,10 @@ $limit = "";
 
 $msg = "";
 
-if(count($_POST) > 0){
+// менять запись isPost()
+// if(count($_POST) > 0){
+// var_dump(isPost());
+if(isPost()){
 	$price_select = trim($_POST['price_select']);
 	// echo $price_select;
 
@@ -111,6 +114,6 @@ else{
 				
 					]);
 	$title = 'Прайс-лист';
-	
+
 ?>
 

@@ -11,6 +11,7 @@ $title = '';
 $inner = '';
 
 	include_once("c/test.php");
+	// include_once("c/ajax.php.php");
 
 	//массив для добавления в темплейт
 	$array = [
@@ -20,4 +21,3 @@ $inner = '';
   
 	//выводим итоговый шаблон v_main из переменных-шаблонов для разметки title, content,
 echo template('v_main', $array);
-?>

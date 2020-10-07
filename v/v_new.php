@@ -55,7 +55,7 @@
 	</div>
 
 </div>
-<div class="container info border-info border  rounded " id="content">
+<!-- <div class="container info border-info border  rounded " id="content">
 	<div class="prices">
 		<span>Средняя оптовая цена</span>
 		<label type="text" name="med_price" class="inp" value=""><?= $medium_price; ?></label>
@@ -69,12 +69,14 @@
 		<span>штук. Общее количество на складе №2</span>
 		<label type="text" name="stock2" class="inp" value=""><?= $sum_stok2; ?></label>
 		<span>рублей.</span>
-	</div>
-	<!-- <div class="peacs">
-<span>Минимальная оптовая цена</span>
-<label type="text" name="min" class="inp" value=""><?= $min_price; ?></label>
-<span>рублей. Максимальная розничная цена</span>
-<label type="text" name="max" class="inp" value=""><?= $max_price_retail; ?></label>
-	<span>рублей.</span>
+	</div> -->
+
+<!-- <div class="peacs">
+		<span>Минимальная оптовая цена</span>
+		<label type="text" name="min" class="inp" value=""><?= $min_price; ?></label>
+		<span>рублей. Максимальная розничная цена</span>
+		<label type="text" name="max" class="inp" value=""><?= $max_price_retail; ?></label>
+			<span>рублей.</span>
 </div> -->
-</div>
+
+<!-- </div> -->
